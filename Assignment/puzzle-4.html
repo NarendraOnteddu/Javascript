@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Dynamic Font for the paragraph background</title>
+        <script>
+            function changeBackGround(){
+                var bgColor = prompt('Enter your selction for background color');
+                document.getElementById('para1').style.backgroundColor=bgColor;
+
+            }
+           
+        </script>
+        <body onload="changeBackGround()">
+            <p id="para1">Yayyy..this paragraph is backgrounded with your color choice</p>
+        </body>
+    </head>
+</html>

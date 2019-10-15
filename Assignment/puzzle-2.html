@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating a dynamic Image with paragraph</title>
+    </head>
+    <body>
+        <div id="imagediv"/>
+        <script>
+            var imageVar = new Image(500,500);
+            imageVar.src = 'Angular_img.png';
+            document.getElementById('imagediv').appendChild(imageVar);
+            document.write('<p>Image is included</p>');
+
+           /* var div = document.getElementById('imagediv'),
+             img = document.createElement('img'),
+             p = document.createElement('p'),
+
+            text = document.createTextNode('some text in the newly created text-node.');
+
+            img.src = 'Angular_img.png';
+    // appends the text-node to the newly-created p element:
+            p.appendChild(text);
+
+            // appends the newly-created image to the div (that we found above):
+            div.appendChild(img);
+            // appends the newly-created p element to the same div:
+            div.appendChild(p);*/
+
+        </script>
+    </body>
+</html>
+</html>

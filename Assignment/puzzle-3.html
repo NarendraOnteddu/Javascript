@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Age calculator</title>
+        <script>
+            function callOnload(){
+                var firstName = prompt("please enter first name");
+                var yearofBirth = prompt("please enter year of birth");
+                var currentYear = new Date().getFullYear();
+                var flag=1;
+                if(yearofBirth<currentYear){
+                    var age = currentYear-yearofBirth;
+                }else{
+                    var age = 'please enter the correct age';
+                    flag=0;
+                }
+                if(flag===1){
+                    document.getElementById('ageplaceholder').innerHTML=firstName+' is '+age+' years old';
+                }else{
+                    document.getElementById('ageplaceholder').innerHTML='please check the age';
+                }
+            }
+                
+         
+        </script>
+    </head>
+    <body onload="callOnload()">
+       <p id="ageplaceholder"></p>
+    </body>
+</html>
+</html>
